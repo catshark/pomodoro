@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = yes">
+    <link rel="stylesheet" href="../stylesheets/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap-3.3.7/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Pacifico" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/pomodoro.css">
+    <title>Pomodoro</title>
+</head>
+<body>
+<div id="background">
+    <div id="pomodoro">
+        <h1>Pomodoro</h1>
+        <div class="timer-duration left">
+            BREAK LENGTH
+            <div class="timeCounter">
+                <button class="timer-button" id="break-minus-button">
+                    -
+                </button>
+                <span class="time" id="break-timer">
+                    5
+                </span>
+                <button class="timer-button" id="break-plus-button">
+                    +
+                </button>
+            </div>
+        </div>
+        <div class="timer-duration right">
+            SESSION LENGTH
+            <div class="timeCounter">
+                <button class="timer-button" id="session-minus-button">
+                    -
+                </button>
+                <span class="time" id="session-timer">
+                    1
+                </span>
+                <button class="timer-button" id="session-plus-button">
+                    +
+                </button>
+            </div>
+        </div>
+        <button class="btn-circle" id="timer">
+            Session
+            <br/>
+            <br/>
+            5
+        </button>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../javascript/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="../javascript/handlebars.js"></script>
+<script type="text/javascript" src="../javascript/pomodoro.js"></script>
+<script type="text/x-handlebars-template" id="displayXOrO-template">
+    <div class="x-or-o">
+        <input type="button" value="X" id="xBtn"/>
+        <input type="button" value="O" id="oBtn"/>
+    </div>
+</script>
+</html>

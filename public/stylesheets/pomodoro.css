@@ -1,0 +1,76 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+}
+
+body {
+    height: 100%;
+    background-size: cover;
+}
+
+button, button:hover, button:active, button:visited {
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+#background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333333;
+}
+
+#pomodoro {
+    position: relative;
+    font-size: 0.75em;
+    font-weight: 200;
+    min-width: 400px;
+}
+
+#pomodoro h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: "Pacifico";
+}
+
+.timer-duration {
+    position: relative;
+    margin: 1em;
+    min-width: 100px;
+}
+
+.left {
+    float: left;
+    left: 40%;
+}
+
+.right {
+    float: right;
+    right: 40%;
+}
+
+.timer-button {
+    background-color: #333333;
+    color: White;
+    border: none;
+    float: left;
+}
+
+.time {
+    float: left;
+}
+
+.btn-circle {
+    width: 300px;
+    height: 300px;
+    font-size: 50px;
+    background-color: #333333;
+    color: White;
+    border-radius: 300px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: -500px; right: 0;
+}
